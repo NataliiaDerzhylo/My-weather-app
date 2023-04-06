@@ -46,7 +46,7 @@ temperatureElement.innerHTML = Math.round (response.data.main.temp);
 
 
   }
-  let city = "Lviv";
+  let city = "New York";
   let apiKey = "7dc301a446bb9379190bcbafb3374dfc";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
