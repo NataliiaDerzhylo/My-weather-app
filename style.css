@@ -31,7 +31,7 @@ li:first-letter {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #5dc6eb;
+  border: 1px solid #ff65b1;
   border-radius: 5px;
 }
 .overview {
@@ -52,4 +52,9 @@ li:first-letter {
   font-size: 16px;
   top: -29px;
   color: #5dc6eb;
+}
+.btn {
+  background-color: #5dc6eb;
+  border-width: 2px;
+  border-color: #ff65b1;
 }
