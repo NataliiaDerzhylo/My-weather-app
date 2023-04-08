@@ -58,3 +58,22 @@ li:first-letter {
   border-width: 2px;
   border-color: #ff65b1;
 }
+
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
+}
+#fahrenheit-link {
+  text-decoration: none;
+}
+#source-link {
+  text-decoration: none;
+  color: #ff65b1;
+}
+#celsius-link {
+  text-decoration: none;
+}
