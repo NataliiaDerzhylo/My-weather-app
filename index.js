@@ -38,7 +38,7 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class  = "row">`;
   forecast.forEach(function (forecastDay) {
-    forecastHTML +=
+    forecastHTML =
       forecastHTML +
       `
               <div class="col-2">
@@ -71,7 +71,7 @@ function displayForecast(response) {
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "12255c39b33b4e26tba3o6ab7f710a3c";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=mentic`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=metric`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
