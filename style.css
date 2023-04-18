@@ -1,5 +1,7 @@
 body {
   font-family: arial, sans-serif;
+  background-image: url("back.jpg");
+  background-size: 1800px;
 }
 
 h1 {
@@ -19,7 +21,14 @@ li {
   font-size: 16px;
   line-height: 19.2px;
   text-align: left;
+  color: lightslategray;
 }
+
+footer {
+  text-align: center;
+  color: #ff65b1;
+}
+
 li:first-letter {
   text-transform: capitalize;
 }
@@ -31,8 +40,10 @@ li:first-letter {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #ff65b1;
+  border: 2px solid #ff65b1;
   border-radius: 5px;
+  background: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+  background-repeat: no-repeat;
 }
 .overview {
   margin-bottom: 20px;
@@ -58,6 +69,11 @@ li:first-letter {
   border-width: 2px;
   border-color: #ff65b1;
 }
+.btn:hover {
+  background-color: #ff65b1;
+  border-width: 2px;
+  border-color: #ff65b1;
+}
 
 .active {
   color: #5dc6eb;
@@ -71,7 +87,9 @@ li:first-letter {
 }
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 5.5;
+  color: #ff65b1;
+  font-weight: 100;
 }
 .weather-forecast-temperature-min {
   opacity: 0.5;
@@ -79,4 +97,13 @@ li:first-letter {
 
 .weather-forecast-temperature {
   font-size: 13px;
+}
+
+#source-link {
+  color: #ff65b1;
+  text-decoration: none;
+}
+
+#source-link:hover {
+  color: #5dc6eb;
 }
