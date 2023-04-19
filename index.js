@@ -123,10 +123,11 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 function showCurrentPosition(position) {
-  let apiKey = "12255c39b33b4e26tba3o6ab7f710a3c";
-  let lat = position.coordinates.latitude;
-  let lon = position.coordinates.longitude;
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=metric`;
+  console.log(position);
+  let apiKey = "311f1f45fee82242ab4086372ab360f5";
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
 

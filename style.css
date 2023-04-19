@@ -99,17 +99,22 @@ li:first-letter {
   font-weight: 100;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .weather-forecast-temperature {
   font-size: 13px;
 }
+
+.weather-forecast-temperature-max {
+  font-weight: 600;
+}
+
 .button-current {
-  margin-top: 15px;
+  margin-top: 25px;
   margin-right: auto;
-  margin-left: 42px;
-  padding: 10px 25px;
+  margin-left: 63px;
+  padding: 5px 15px;
   background: #f1edfa;
   font-size: 10px;
   font-weight: 500;
@@ -117,7 +122,7 @@ li:first-letter {
 }
 
 .button-current {
-  border-radius: 50px;
+  border-radius: 5px;
   border: 1px solid #5dc6eb;
 }
 
