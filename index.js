@@ -77,6 +77,8 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
+let button = document.querySelector(".button-current");
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -120,4 +122,20 @@ let celsiusTemperature = null;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("New York");
+function showCurrentPosition(position) {
+  let apiKey = "12255c39b33b4e26tba3o6ab7f710a3c";
+  let lat = position.coordinates.latitude;
+  let lon = position.coordinates.longitude;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat=${coordinates.lat}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function showGeoLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showCurrentPosition);
+}
+
+let currentLocation = document.querySelector(".button-current");
+currentLocation.addEventListener("click", showGeoLocation);
+
+search("Lviv");

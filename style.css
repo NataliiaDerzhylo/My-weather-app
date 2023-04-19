@@ -84,7 +84,14 @@ li:first-letter {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+  padding: 20px;
+
+  color: #000000;
+  border: 1px solid #f1edfa;
+  background: #f1edfa;
+  border-radius: 5px;
 }
+
 .weather-forecast-date {
   font-size: 16px;
   opacity: 5.5;
@@ -97,6 +104,21 @@ li:first-letter {
 
 .weather-forecast-temperature {
   font-size: 13px;
+}
+.button-current {
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: 42px;
+  padding: 10px 25px;
+  background: #f1edfa;
+  font-size: 10px;
+  font-weight: 500;
+  color: #ff65b1;
+}
+
+.button-current {
+  border-radius: 50px;
+  border: 1px solid #5dc6eb;
 }
 
 #source-link {

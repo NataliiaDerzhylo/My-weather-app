@@ -16,7 +16,7 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form id="search-form" class="mb-2">
+          <form id="search-form" class="mb-">
             <div class="row">
               <div class="col-10">
                 <input
@@ -38,7 +38,14 @@
             </div>
           </form>
           <div class="overview">
-            <h1 id="city"></h1>
+            <div class="row">
+              <div class="col-8">
+                <h1 id="city"></h1>
+              </div>
+              <div class="col-4">
+                <button class="button-current">Current Location</button>
+              </div>
+            </div>
             <ul>
               <li id="date"></li>
               <li id="description"></li>
